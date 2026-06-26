@@ -2,7 +2,7 @@ from datetime import datetime
 from pathlib import Path
 from importlib import resources
 
-TEMPLATES_DIR = resources.files("templates")
+TEMPLATES_DIR = resources.files("licgen.templates")
 
 
 def create_license_file(
