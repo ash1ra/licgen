@@ -18,6 +18,7 @@ def main() -> None:
     args = parser.parse_args()
 
     license_list = [Path(item.name).stem for item in TEMPLATES_DIR.iterdir()]
+    license_list.remove("__init__")
 
     if args.list:
         print("Available license types:")
